@@ -62,9 +62,9 @@
                                 </div>
                                 </div>
                             </div>
-                            <span class="fw-semibold d-block mb-1">Profit</span>
-                            <h3 class="card-title mb-2">$12,628</h3>
-                            <small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i> +72.80%</small>
+                            <span class="fw-semibold d-block mb-1">Session</span>
+                            <h3 class="card-title mb-2">10</h3>
+                            <small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i> +10/30</small>
                             </div>
                         </div>
                         </div>
@@ -96,7 +96,7 @@
                                 </div>
                                 </div>
                             </div>
-                            <span>Sales</span>
+                            <span>Product</span>
                             <h3 class="card-title text-nowrap mb-1">$4,679</h3>
                             <small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i> +28.42%</small>
                             </div>
@@ -188,7 +188,7 @@
                                 </div>
                                 </div>
                             </div>
-                            <span class="d-block mb-1">Payments</span>
+                            <span class="d-block mb-1">Treatment</span>
                             <h3 class="card-title text-nowrap mb-2">$2,456</h3>
                             <small class="text-danger fw-semibold"><i class="bx bx-down-arrow-alt"></i> -14.82%</small>
                             </div>
@@ -218,7 +218,7 @@
                                 </div>
                                 </div>
                             </div>
-                            <span class="fw-semibold d-block mb-1">Transactions</span>
+                            <span class="fw-semibold d-block mb-1">Membership</span>
                             <h3 class="card-title mb-2">$14,857</h3>
                             <small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i> +28.14%</small>
                             </div>
@@ -232,8 +232,8 @@
                             <div class="d-flex justify-content-between flex-sm-row flex-column gap-3">
                                 <div class="d-flex flex-sm-column flex-row align-items-start justify-content-between">
                                 <div class="card-title">
-                                    <h5 class="text-nowrap mb-2">Profile Report</h5>
-                                    <span class="badge bg-label-warning rounded-pill">Year 2021</span>
+                                    <h5 class="text-nowrap mb-2">Annual Report</h5>
+                                    <span class="badge bg-label-warning rounded-pill">Year 2024</span>
                                 </div>
                                 <div class="mt-sm-auto">
                                     <small class="text-success text-nowrap fw-semibold"

@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\EmployeeController;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,11 +16,7 @@ use App\Http\Controllers\EmployeeController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 //Modul Dashboard
-Route::get('/index', [HomeController::class, 'index'])->name('home');
-
-Route::get('/employee/index', [EmployeeController::class, 'index'])->name('employee_index');
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::resource('/employee', \App\Http\Controllers\EmployeeController::class);

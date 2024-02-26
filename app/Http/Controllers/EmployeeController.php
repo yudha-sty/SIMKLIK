@@ -3,15 +3,20 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use DataTables;
+use App\Models\EmployeeModel;
+use Illuminate\View\View;
 
 class EmployeeController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(): View
     {
-        return view ('employee/index');
+        $totalEmployee = EmployeeModel::where('isactive', 1)->select('id')->distinct()->count();
+        $employee = EmployeeModel::where('isactive', 1)->paginate(10);
+        return view('employee.index', compact('employee', 'totalEmployee'));
     }
 
     /**
@@ -61,4 +66,5 @@ class EmployeeController extends Controller
     {
         //
     }
+
 }

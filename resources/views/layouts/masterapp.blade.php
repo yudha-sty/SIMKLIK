@@ -13,7 +13,7 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Dashboard - Analytics | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
+    <title>Dashboard - Oriskin Activity</title>
 
     <meta name="description" content="" />
 
@@ -40,6 +40,22 @@
     <link rel="stylesheet" href="{{ url ('templates/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css') }}" />
 
     <link rel="stylesheet" href="{{ url ('templates/assets/vendor/libs/apex-charts/apex-charts.css') }}" />
+
+    <style>
+.menu-separator {
+  border: none;
+  border-top: 1px solid #ccc; /* Warna dan ketebalan garis dapat disesuaikan */
+  margin-top: 5px; /* Atur jarak di atas garis */
+  margin-bottom: 5px; /* Atur jarak di bawah garis */
+}
+
+.separator-text {
+  display: inline-block; /* Atur agar teks dapat diatur dengan lebar dan tinggi */
+  padding: 0 10px; /* Atur padding di sekitar teks */
+  font-weight: bold; /* Atur teks menjadi tebal */
+}
+
+    </style>
 
     <!-- Page CSS -->
 
@@ -87,5 +103,40 @@
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script>
+  // Ambil URL halaman saat ini
+  var currentLocation = window.location.pathname;
+
+  // Dapatkan semua tautan menu
+  var menuLinks = document.querySelectorAll('.menu-link');
+
+  // Loop melalui setiap tautan menu
+  menuLinks.forEach(function(link) {
+    // Ambil href dari setiap tautan
+    var href = link.getAttribute('href');
+
+    // Periksa apakah href sama dengan URL halaman saat ini
+    if (href === currentLocation) {
+      // Tambahkan kelas 'active' ke menu-item yang sesuai
+      link.closest('.menu-item').classList.add('active');
+    }
+  });
+</script>
+
+<script>
+        //message with toastr
+        @if(session()->has('success'))
+        
+            toastr.success('{{ session('success') }}', 'BERHASIL!'); 
+
+        @elseif(session()->has('error'))
+
+            toastr.error('{{ session('error') }}', 'GAGAL!'); 
+            
+        @endif
+    </script>
+
+
   </body>
 </html>
